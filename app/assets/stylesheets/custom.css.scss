@@ -4,7 +4,7 @@ $navbar-default-bg: #FFFFFF;
 @import "bootstrap";
 
 body{
-  background-image: url('doodle.jpg');
+  background-image: asset-url('doodle.jpg');
   background-size: cover; 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -62,4 +62,36 @@ body::after {
 
 .jumbotron{
   background: rgba(0, 0, 0, 0.05) ;
+}
+
+.footer {
+    display: block;
+    font-size: 13px;
+    background: #191f21;
+    color: #fff;
+    padding: 15px 0 5px;
+    border-top: thin solid #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+footer p {
+  float: left;
+}
+
+footer a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
 }
