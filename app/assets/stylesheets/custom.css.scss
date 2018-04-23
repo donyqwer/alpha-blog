@@ -1,3 +1,65 @@
+$navbar-default-bg: #FFFFFF;
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body{
+  background-image: url('doodle.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body::after {
+  background: rgba(255, 255, 255, 0.9) ;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;   
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #fff;
+    letter-spacing: 1px;
+    border-bottom: thin solid #e1e1e1;
+    padding: 3px 0;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #000;
+  text-transform: uppercase;
+}
+
+#logo:hover{
+  color: #777;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #cc3349;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+}
+
+.center{
+  text-align: center;
+  /* bring your own prefixes */
+  transform: translate(0%, 15%);
+}
+
+.jumbotron{
+  background: rgba(0, 0, 0, 0.05) ;
+}
