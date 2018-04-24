@@ -3,22 +3,32 @@ $navbar-default-bg: #FFFFFF;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+html{
+  height: 100%
+}
+
 body{
-  background-image: asset-url('doodle.jpg');
+  background-image: asset-url('bg.jpg');
   background-size: cover; 
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 100%;
+  overflow-x: hidden;
 }
 
-body::after {
-  background: rgba(255, 255, 255, 0.9) ;
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: -1;   
+.container{
+  min-height: 100%;
+}
+
+.article-title{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.article-body{
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .article-actions{
@@ -66,7 +76,6 @@ body::after {
 .center{
   text-align: center;
   /* bring your own prefixes */
-  transform: translate(0%, 15%);
 }
 
 .jumbotron{
@@ -80,9 +89,6 @@ body::after {
     color: #fff;
     padding: 15px 0 5px;
     border-top: thin solid #fff;
-    position: absolute;
-    left: 0;
-    bottom: 0;
     width: 100%;
     overflow: hidden;
 }
