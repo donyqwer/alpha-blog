@@ -21,6 +21,15 @@ body::after {
   z-index: -1;   
 }
 
+.article-actions{
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description{
+  margin-top:0;
+}
+
 .navbar {
     margin-bottom: 10;
     border-bottom: 1px solid rgba(255,255,255,.3);
